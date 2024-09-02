@@ -1,0 +1,15 @@
+{
+  "name": "ussd-composer",
+  "version": "1.0.0",
+  "description": "A utility for composing and managing USSD flows and menus",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["ussd", "menu", "flow", "composer"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
