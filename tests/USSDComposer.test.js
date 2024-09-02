@@ -7,11 +7,11 @@ describe('USSDComposer', () => {
     composer = new USSDComposer('Test Menu');
   });
 
-  test('should render menu correctly', () => {
+  test('should render menu correctly', async () => {
     composer.addOption('Option 1', () => {})
             .addOption('Option 2', () => {});
 
-    const rendered = composer.render('');
+    const rendered = await composer.render('');
     expect(rendered).toBe('CON Test Menu\n1. Option 1\n2. Option 2');
   });
 
